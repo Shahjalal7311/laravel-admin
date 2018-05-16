@@ -36,6 +36,3 @@
 
 <!-- Site Script -->
 <script src="{{ asset('js/app.js') }}"></script>
-
-<!-- Demo Swicth Color -->
-<script src="{{ asset('js/demo_color.js') }}"></script>

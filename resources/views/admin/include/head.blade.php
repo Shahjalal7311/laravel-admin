@@ -4,7 +4,7 @@
 <meta name="author" content="DownTown Themes">
 
 <link rel="shortcut icon" href="{{ asset('img/icon.png') }}">
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <title>Laravel Templete - Responsive Admin Template</title>
 
 <!-- Google Fonts -->

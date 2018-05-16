@@ -1,4 +1,3 @@
-
 <!-- logo -->
 <div class="logo hidden-xs">
 	<a href="index-2.html" class="logo-expanded"> <img src="{{ asset('img/icon.png') }}" alt="logo"> <span class="nav-text">Laravel</span> </a>
@@ -29,22 +28,26 @@
 			<li>
 				<a href="#"> <span class="pull-left"><img src="{{ asset('img/avatar-2.jpg') }}" class="img-circle thumb-sm m-r-15" alt="img"></span> <span class="block"><strong>Hammond Burke</strong></span> <span class="media-body block">New tasks
 					<br>
-					<small class="text-muted">3 seconds ago</small></span> </a>
+					<small class="text-muted">3 seconds ago</small></span> 
+				</a>
 			</li>
 			<li>
 				<a href="#"> <span class="pull-left"><img src="{{ asset('img/avatar-3.jpg') }}" class="img-circle thumb-sm m-r-15" alt="img"></span> <span class="block"><strong>Ray Shannon</strong></span> <span class="media-body block">New file add
 					<br>
-					<small class="text-muted">5 minutes ago</small></span> </a>
+					<small class="text-muted">5 minutes ago</small></span> 
+				</a>
 			</li>
 			<li>
 				<a href="#"> <span class="pull-left"><img src="{{ asset('img/avatar-4.jpg') }}" class="img-circle thumb-sm m-r-15" alt="img"></span> <span class="block"><strong>Hammond Burke</strong></span> <span class="media-body block">New file add
 					<br>
-					<small class="text-muted">12 minutes ago</small></span> </a>
+					<small class="text-muted">12 minutes ago</small></span> 
+				</a>
 			</li>
 			<li>
 				<a href="#"> <span class="pull-left"><img src="{{ asset('img/avatar-5.jpg') }}" class="img-circle thumb-sm m-r-15" alt="img"></span> <span class="block"><strong>Ray Shannon</strong></span> <span class="media-body block">New tasks needs to be done
 					<br>
-					<small class="text-muted">15 minutes ago</small></span> </a>
+					<small class="text-muted">15 minutes ago</small></span> 
+				</a>
 			</li>
 			<li>
 				<p class="text-center">
@@ -101,7 +104,7 @@
 	<!-- User Menu Dropdown -->
 	<li class="dropdown text-center">
 		<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
-		<img alt="" src="{{ asset('img/avatar-2.jpg') }}" class="img-circle profile-img thumb-sm"> <span class="username">Shahjalal </span> <span class="caret"></span> </a>
+		<img alt="" src="{{ asset('img/avatar-2.jpg') }}" class="img-circle profile-img thumb-sm"> <span class="username"> Shahjalal</span> <span class="caret"></span> </a>
 		<ul class="dropdown-menu extended pro-menu fadeInUp animated" tabindex="5003" style="overflow: hidden; outline: none;">
 			<li>
 				<a href="profile.html"><i class="fa fa-briefcase"></i>Profile</a>
@@ -113,10 +116,13 @@
 				<a href="#"><i class="fa fa-bell"></i><span class="pull-left"> Issues</span> <span class="label label-info pull-right mail-info">5</span></a>
 			</li>
 			<li>
-				<a href="">
+				<a href="{{ route('logout') }}"	onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
 					<i class="fa fa-sign-out"></i> Log Out
 				</a>
 			</li>
+			<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+				{{ csrf_field() }}
+			</form>
 		</ul>
 	</li>
 	<!-- End User Menu Dropdown -->

@@ -21,6 +21,8 @@ $this->get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
 $this->post('login', 'Auth\LoginController@login')->name('auth.login');
 $this->post('logout', 'Auth\LoginController@logout')->name('auth.logout');
 
-Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
-    Route::get('/', ['as' => 'dashboard', 'uses' => 'HomeController@index']);
-});
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
