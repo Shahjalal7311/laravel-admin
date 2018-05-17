@@ -17,9 +17,11 @@
 <!-- Bootstrap CSS -->
 <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/bootstrap-reset.css') }}" rel="stylesheet">
-
+<link href="{{ asset('plugins/fullcalendar/fullcalendar.css') }}" rel="stylesheet" />
 <!--Animation css-->
 <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
+
+<link href="{{ asset('plugins/nestable/jquery.nestable.css') }}" rel="stylesheet" />
 
 <!--Morris Chart CSS -->
 <link rel="stylesheet" href="{{ asset('plugins/morris/morris.css') }}">

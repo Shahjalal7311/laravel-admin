@@ -23,6 +23,8 @@ $this->post('logout', 'Auth\LoginController@logout')->name('auth.logout');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/calendar', 'UiComponentController@CalenderEvent')->name('calendar');
+Route::get('/nestable', 'UiComponentController@Nestable')->name('nestable');
 
 
 

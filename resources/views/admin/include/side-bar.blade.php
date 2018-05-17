@@ -13,16 +13,10 @@
 						<a href="#"><i class="ion-settings"></i> <span class="nav-label">Components</span> <span class="caret pull-right m-t-10"></span></a>
 						<ul class="list-unstyled">
 							<li>
-								<a href="grid.html">Grid</a>
+								<a href="{{ route('nestable') }}">Nestable</a>
 							</li>
 							<li>
-								<a href="portlets.html">Portlets</a>
-							</li>
-							<li>
-								<a href="nestable-list.html">Nesteble</a>
-							</li>
-							<li>
-								<a href="calendar.html">Calendar</a>
+								<a href="{{ route('calendar') }}">Calendar</a>
 							</li>
 						</ul>
 					</li>
